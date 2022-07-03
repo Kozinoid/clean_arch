@@ -32,6 +32,7 @@ class PersonsList extends StatelessWidget {
               return _loadingIndicator();
           }
           else if (state is PersonLoadingState){
+            persons = state.oldPersonList;
             isLoading = true;
           }
           else if (state is PersonLoadedState){

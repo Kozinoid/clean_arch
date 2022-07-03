@@ -22,5 +22,4 @@ class QueryPersonParams extends Equatable{
 
   @override
   List<Object?> get props => [query];
-
 }
