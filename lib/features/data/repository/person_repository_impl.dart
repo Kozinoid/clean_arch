@@ -1,7 +1,7 @@
 import 'package:clean_arch/core/error/exception.dart';
 import 'package:clean_arch/core/error/failure.dart';
 import 'package:clean_arch/core/platform/network_info.dart';
-import 'package:clean_arch/features/data/datasourses/person_local_data_sour5ce.dart';
+import 'package:clean_arch/features/data/datasourses/person_local_data_source.dart';
 import 'package:clean_arch/features/data/datasourses/person_remote_data_source.dart';
 import 'package:clean_arch/features/data/models/person_model.dart';
 import 'package:clean_arch/features/domain/entities/person_entity.dart';

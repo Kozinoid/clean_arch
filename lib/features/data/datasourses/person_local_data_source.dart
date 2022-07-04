@@ -27,8 +27,6 @@ class PersonLocalDataSourceImpl extends PersonLocalDataSource{
   @override
   Future<void> personToCache(List<PersonModel> persons) {
     final List<String> personJsonList = persons.map((person) => json.encode(person.toJson())).toList();
-    //sharedPreferences.setStringList(CACHED_PERSONS_LIST, personJsonList);
-    //return Future.value(personJsonList);
     return Future(() => sharedPreferences.setStringList(CACHED_PERSONS_LIST, personJsonList));
   }
 }

@@ -1,5 +1,5 @@
 import 'package:clean_arch/core/platform/network_info.dart';
-import 'package:clean_arch/features/data/datasourses/person_local_data_sour5ce.dart';
+import 'package:clean_arch/features/data/datasourses/person_local_data_source.dart';
 import 'package:clean_arch/features/data/datasourses/person_remote_data_source.dart';
 import 'package:clean_arch/features/data/repository/person_repository_impl.dart';
 import 'package:clean_arch/features/domain/usecases/get_all_persons.dart';
