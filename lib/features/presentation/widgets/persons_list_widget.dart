@@ -48,8 +48,9 @@ class PersonsList extends StatelessWidget {
           return ListView.separated(
             controller: scrollController,
             separatorBuilder: (BuildContext context, int index) {
-              return Divider(
-                color: Colors.grey[400],
+              return const Divider(
+                height: 5,
+                //color: Colors.grey[400],
               );
             },
             itemCount: persons.length + (isLoading ? 1 : 0),

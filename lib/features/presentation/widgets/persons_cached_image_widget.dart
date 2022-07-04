@@ -6,17 +6,19 @@ class PersonsCachedImage extends StatelessWidget {
       {Key? key,
       required this.imageUrl,
       required this.width,
-      required this.height})
+      required this.height,
+        this.fourCorners = false})
       : super(key: key);
 
   final String imageUrl;
   final double width, height;
+  final bool fourCorners;
 
   Widget _imageWidget(ImageProvider imageProvider) {
     return Container(
       decoration: BoxDecoration(
-        borderRadius: const BorderRadius.only(
-            topLeft: Radius.circular(20), bottomLeft: Radius.circular(20)),
+        borderRadius: fourCorners ? const BorderRadius.all(Radius.circular(20)) : const BorderRadius.only(
+            topLeft: Radius.circular(10), bottomLeft: Radius.circular(10)),
         image: DecorationImage(image: imageProvider, fit: BoxFit.cover),
       ),
     );

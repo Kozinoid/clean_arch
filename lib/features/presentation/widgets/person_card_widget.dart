@@ -25,6 +25,7 @@ class PersonCard extends StatelessWidget {
         child: Row(
           children: [
             Container(
+              padding: const EdgeInsets.only(left: 10),
               child: PersonsCachedImage(
                 imageUrl: person.image ?? '',
                 width: 140,
@@ -33,7 +34,7 @@ class PersonCard extends StatelessWidget {
             ),
             Expanded(
               child: Container(
-                padding: const EdgeInsets.only(top: 20, bottom: 10, left: 20, right: 10),
+                padding: const EdgeInsets.only(top: 20, bottom: 10, left: 10, right: 10),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [

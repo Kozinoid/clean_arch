@@ -52,7 +52,9 @@ class CustomSearchDelegate extends SearchDelegate {
             return ListView.separated(
                 itemCount: personList.isNotEmpty ? personList.length : 0,
                 itemBuilder: (context, index) => PersonCard(person: personList[index],),
-              separatorBuilder: (BuildContext context, int index) => const Divider(),
+              separatorBuilder: (BuildContext context, int index) => const Divider(
+                height: 5,
+              ),
             );
           }
           else{
@@ -67,7 +69,9 @@ class CustomSearchDelegate extends SearchDelegate {
     return ListView.separated(
       itemCount: query.isNotEmpty ? 0 : suggestions.length,
       separatorBuilder: (context, index){
-        return const Divider();
+        return const Divider(
+          height: 5,
+        );
       },
       itemBuilder: (context, index){
         return GestureDetector(
