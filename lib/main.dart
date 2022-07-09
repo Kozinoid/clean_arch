@@ -23,6 +23,7 @@ class MyApp extends StatelessWidget {
           BlocProvider<PersonSearchBloc>(create: (context) => di.sl<PersonSearchBloc>()),
         ], 
         child: MaterialApp(
+          debugShowCheckedModeBanner: false,
           theme: ThemeData.dark().copyWith(
             backgroundColor: AppColors.mainBackground,
             scaffoldBackgroundColor: AppColors.mainBackground,
